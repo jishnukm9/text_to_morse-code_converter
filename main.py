@@ -3,7 +3,7 @@ letter_list=["._",'_...','_._.','_..','.','.._.','__.','....','..','.___','_._',
 string_list=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
 def repeat():
     user_input=input("Encode or Decode?(E/D) :").lower()
-    #encoding english language to morse code
+    #text to morse code
     if user_input=='e':
         def encode(sentence):
             code=''
@@ -25,7 +25,7 @@ def repeat():
         sentence=input('Sentence to be encoded : ').lower()
         code=encode(sentence)
         print(code)
-    #decoding morse code to english language
+    #morse code to text
     elif user_input=='d':
         code=input('Code to be decoded : ')
         list_code=code.split('   ')
